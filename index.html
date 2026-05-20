@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>OTF Solutions Ltd | Workflow Automation · Web Design · AI Tools · KRA Filing</title>
+<meta name="description" content="OTF Solutions Ltd delivers workflow automation, professional web design, AI detection & plagiarism removal, KRA tax filing, and bulk SMS services. Kenya's premier digital solutions partner."/>
+<meta name="keywords" content="OTF Solutions, workflow automation Kenya, web design Nairobi, AI plagiarism removal, KRA filing, bulk SMS Kenya, digital transformation, WhatsApp automation"/>
+<meta name="author" content="OTF Solutions Ltd"/>
+<meta name="robots" content="index, follow"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="OTF Solutions Ltd | Tech-Powered Business Solutions"/>
+<meta property="og:description" content="Workflow automation, web design, AI detection, KRA filing and bulk SMS — OTF Solutions powers Kenya's businesses with smart digital tools."/>
+<link rel="canonical" href="https://www.otfsolutionsltd.com/"/>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"OTF Solutions Ltd","email":"otfsolutionsltd@gmail.com","telephone":"0106351077","description":"OTF Solutions Ltd provides workflow automation, web design, AI detection and plagiarism removal, KRA tax filing, and bulk SMS services in Kenya.","url":"https://www.otfsolutionsltd.com","contactPoint":{"@type":"ContactPoint","telephone":"0106351077","contactType":"customer service","email":"otfsolutionsltd@gmail.com"}}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+
+<style>
+/* ── RESET & ROOT ── */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+:root{
+  --bg:#070d12;
+  --bg2:#0b1520;
+  --bg3:#0f1e2d;
+  --teal:#4ecca3;
+  --teal-dim:rgba(78,204,163,0.08);
+  --teal-border:rgba(78,204,163,0.22);
+  --teal-mid:rgba(78,204,163,0.45);
+  --orange:#ff8c42;
+  --blue:#4da6ff;
+  --white:#f0f8f4;
+  --muted:rgba(240,248,244,0.45);
+  --muted2:rgba(240,248,244,0.25);
+  --card:#0d1a25;
+  --sans:'Plus Jakarta Sans',sans-serif;
+  --body:'Inter',sans-serif;
+  --mono:'JetBrains Mono',monospace;
+  --r:10px;
+}
+body{
+  font-family:var(--body);
+  background:var(--bg);
+  color:var(--white);
+  overflow-x:hidden;
+  font-size:16px;
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+}
+
+/* ── DOT GRID BG ── */
+body::after{
+  content:'';
+  position:fixed;inset:0;z-index:0;pointer-events:none;
+  background-image:radial-gradient(rgba(78,204,163,0.12) 1px, transparent 1px);
+  background-size:32px 32px;
+  mask-image:radial-gradient(ellipse 100% 100% at 50% 0%, black 40%, transparent 100%);
+  opacity:0.5;
+}
+
+/* ── CURSOR ── */
+.cursor-dot{
+  position:fixed;width:7px;height:7px;
+  background:var(--teal);border-radius:50%;
+  pointer-events:none;z-index:10000;
+  transform:translate(-50%,-50%);
+  transition:width 0.15s,height 0.15s;
+}
+
+/* ── NAV ── */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:999;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:1rem 5%;
+  background:rgba(7,13,18,0.88);
+  backdrop-filter:blur(20px);
+  border-bottom:1px solid rgba(78,204,163,0.1);
+}
+.logo{
+  font-family:var(--sans);font-size:1.15rem;font-weight:800;
+  color:var(--white);text-decoration:none;letter-spacing:-0.3px;
+}
+.logo span{color:var(--teal);}
+.nav-links{display:flex;gap:2rem;list-style:none;align-items:center;}
+.nav-links a{
+  font-family:var(--body);font-size:0.875rem;font-weight:500;
+  color:var(--muted);text-decoration:none;
+  transition:color 0.2s;
+}
+.nav-links a:hover{color:var(--teal);}
+.nav-cta{
+  font-family:var(--body)!important;font-size:0.85rem!important;font-weight:600!important;
+  color:var(--teal)!important;
+  border:1px solid var(--teal-border)!important;
+  padding:0.45rem 1.2rem;border-radius:50px;
+  background:var(--teal-dim)!important;
+  transition:background 0.2s!important;
+}
+.nav-cta:hover{background:rgba(78,204,163,0.15)!important;}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;}
+.hamburger span{display:block;width:22px;height:1.5px;background:var(--white);border-radius:2px;}
+
+/* ── HERO ── */
+#hero{
+  position:relative;z-index:1;
+  min-height:100vh;
+  display:grid;
+  grid-template-columns:1fr 480px;
+  align-items:center;
+  padding:8rem 5% 4rem;
+  overflow:hidden;
+  gap:2rem;
+}
+.hero-left{position:relative;z-index:2;}
+.hero-chip{
+  display:inline-flex;align-items:center;gap:8px;
+  background:var(--teal-dim);border:1px solid var(--teal-border);
+  border-radius:50px;padding:5px 16px;margin-bottom:1.8rem;
+  animation:fadeUp 0.5s ease both;
+}
+.chip-dot{
+  width:7px;height:7px;border-radius:50%;background:var(--teal);
+  animation:pulse 2s ease infinite;
+}
+@keyframes pulse{0%,100%{opacity:1;}50%{opacity:0.4;}}
+.chip-txt{font-family:var(--body);font-size:0.78rem;font-weight:600;color:var(--teal);}
+
+.hero-h1{
+  font-family:var(--sans);
+  font-size:clamp(2.8rem,5.5vw,4.4rem);
+  font-weight:800;line-height:1.06;
+  letter-spacing:-2px;
+  margin-bottom:1.4rem;
+  animation:fadeUp 0.5s 0.08s ease both;
+}
+.hero-h1 em{
+  color:var(--teal);font-style:normal;
+  position:relative;display:inline-block;
+}
+.hero-h1 em::after{
+  content:'';position:absolute;
+  bottom:-3px;left:0;right:0;height:3px;
+  background:var(--teal);border-radius:2px;
+  transform:scaleX(0);transform-origin:left;
+  animation:line 0.5s 1s ease forwards;
+}
+@keyframes line{to{transform:scaleX(1);}}
+
+.hero-sub{
+  font-family:var(--body);font-size:1.08rem;font-weight:400;
+  color:var(--muted);max-width:500px;line-height:1.85;
+  margin-bottom:2.2rem;
+  animation:fadeUp 0.5s 0.16s ease both;
+}
+.hero-btns{
+  display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:3rem;
+  animation:fadeUp 0.5s 0.24s ease both;
+}
+.btn-primary{
+  font-family:var(--body);font-size:0.95rem;font-weight:700;
+  background:var(--teal);color:#070d12;
+  padding:0.85rem 2.2rem;border-radius:50px;
+  border:none;cursor:pointer;text-decoration:none;
+  transition:opacity 0.2s,transform 0.15s;
+  display:inline-block;
+}
+.btn-primary:hover{opacity:0.88;transform:translateY(-2px);}
+.btn-ghost{
+  font-family:var(--body);font-size:0.95rem;font-weight:500;
+  background:transparent;color:var(--white);
+  padding:0.85rem 2.2rem;border-radius:50px;
+  border:1px solid rgba(240,248,244,0.18);cursor:pointer;text-decoration:none;
+  transition:border-color 0.2s,color 0.2s,transform 0.15s;
+  display:inline-block;
+}
+.btn-ghost:hover{border-color:var(--teal);color:var(--teal);transform:translateY(-2px);}
+
+.hero-stats{
+  display:flex;gap:0;max-width:460px;
+  border:1px solid rgba(78,204,163,0.12);
+  border-radius:12px;overflow:hidden;
+  background:rgba(11,21,32,0.7);
+  backdrop-filter:blur(10px);
+  animation:fadeUp 0.5s 0.32s ease both;
+}
+.stat-box{
+  flex:1;padding:1.2rem 1rem;text-align:center;
+  border-right:1px solid rgba(78,204,163,0.1);
+}
+.stat-box:last-child{border-right:none;}
+.stat-val{
+  font-family:var(--sans);font-size:1.6rem;font-weight:800;
+  color:var(--teal);line-height:1;margin-bottom:4px;
+}
+.stat-lbl{font-size:0.72rem;font-weight:500;color:var(--muted);letter-spacing:0.3px;}
+
+/* Node canvas */
+.hero-right{position:relative;}
+#nodeCanvas{width:100%;height:420px;display:block;}
+
+/* ── SERVICES ── */
+#services{
+  position:relative;z-index:1;
+  padding:6rem 5%;
+  background:linear-gradient(180deg,var(--bg) 0%,var(--bg2) 100%);
+}
+.sec-eyebrow{
+  font-family:var(--body);font-size:0.72rem;font-weight:600;
+  letter-spacing:2px;color:var(--teal);text-transform:uppercase;
+  display:flex;align-items:center;gap:6px;margin-bottom:0.5rem;
+}
+.sec-eyebrow::before{content:'//';font-family:var(--mono);opacity:0.5;}
+.sec-title{
+  font-family:var(--sans);
+  font-size:clamp(1.9rem,3.5vw,2.6rem);
+  font-weight:800;line-height:1.1;letter-spacing:-0.8px;
+  margin-bottom:0.7rem;
+}
+.sec-title span{color:var(--teal);}
+.sec-sub{
+  font-size:1.05rem;font-weight:400;
+  color:var(--muted);max-width:520px;line-height:1.85;
+  margin-bottom:3rem;
+}
+.centered{text-align:center;}
+.centered .sec-sub{margin-left:auto;margin-right:auto;}
+
+/* SERVICE CARDS GRID */
+.svc-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(290px,1fr));
+  gap:1.4rem;
+}
+
+/* ── ANIMATED SERVICE CARD ── */
+.svc-card{
+  background:var(--card);
+  border:1px solid rgba(78,204,163,0.1);
+  border-radius:14px;
+  overflow:hidden;
+  position:relative;
+  cursor:pointer;
+  /* clip for shimmer */
+  isolation:isolate;
+}
+
+/* Shimmer sweep on hover */
+.svc-card::before{
+  content:'';
+  position:absolute;top:0;left:-100%;width:60%;height:100%;
+  background:linear-gradient(105deg,transparent 40%,rgba(78,204,163,0.07) 50%,transparent 60%);
+  transition:left 0.55s ease;
+  z-index:1;pointer-events:none;
+}
+.svc-card:hover::before{left:160%;}
+
+/* Top accent line */
+.svc-card::after{
+  content:'';
+  position:absolute;top:0;left:0;right:0;height:2px;
+  background:linear-gradient(90deg,transparent,var(--teal),transparent);
+  transform:scaleX(0);transform-origin:center;
+  transition:transform 0.4s ease;
+  z-index:2;
+}
+.svc-card:hover::after{transform:scaleX(1);}
+
+/* Overall card transition */
+.svc-card{
+  transition:border-color 0.35s,transform 0.35s cubic-bezier(.22,.68,0,1.2),box-shadow 0.35s;
+}
+.svc-card:hover{
+  border-color:rgba(78,204,163,0.5);
+  transform:translateY(-8px) scale(1.015);
+  box-shadow:0 30px 60px rgba(0,0,0,0.5),0 0 0 1px rgba(78,204,163,0.1);
+}
+
+/* Image */
+.svc-img-wrap{position:relative;overflow:hidden;height:185px;}
+.svc-img{
+  width:100%;height:100%;object-fit:cover;display:block;
+  filter:grayscale(40%) brightness(0.7);
+  transform:scale(1);
+  transition:filter 0.4s,transform 0.5s cubic-bezier(.22,.68,0,1.2);
+}
+.svc-card:hover .svc-img{
+  filter:grayscale(0%) brightness(0.85);
+  transform:scale(1.06);
+}
+.svc-img-fade{
+  position:absolute;inset:0;
+  background:linear-gradient(180deg,transparent 30%,var(--card) 100%);
+}
+.svc-badge{
+  position:absolute;top:12px;right:12px;
+  font-family:var(--body);font-size:0.62rem;font-weight:700;
+  letter-spacing:0.5px;padding:3px 10px;border-radius:4px;
+  z-index:2;
+}
+.badge-live{background:rgba(78,204,163,0.12);border:1px solid var(--teal);color:var(--teal);}
+.badge-soon{background:rgba(255,140,66,0.12);border:1px solid var(--orange);color:var(--orange);}
+
+/* Body */
+.svc-body{padding:1.4rem 1.5rem 1.6rem;position:relative;z-index:1;}
+.svc-icon-row{display:flex;align-items:center;gap:0.8rem;margin-bottom:0.75rem;}
+.svc-icon{
+  width:40px;height:40px;border-radius:9px;
+  background:var(--teal-dim);border:1px solid var(--teal-border);
+  display:flex;align-items:center;justify-content:center;
+  font-size:1.15rem;flex-shrink:0;
+  transition:background 0.3s,transform 0.3s;
+}
+.svc-card:hover .svc-icon{
+  background:rgba(78,204,163,0.18);
+  transform:rotate(-6deg) scale(1.1);
+}
+.svc-name{
+  font-family:var(--sans);font-size:1rem;font-weight:700;
+  color:var(--white);line-height:1.25;
+  transition:color 0.2s;
+}
+.svc-card:hover .svc-name{color:var(--teal);}
+.svc-desc{
+  font-size:0.9rem;font-weight:400;
+  color:var(--muted);line-height:1.8;margin-bottom:1rem;
+}
+
+/* Feature list — slides up on hover */
+.svc-features{
+  list-style:none;display:flex;flex-direction:column;gap:0.38rem;
+  overflow:hidden;
+  max-height:0;
+  opacity:0;
+  transform:translateY(8px);
+  transition:max-height 0.4s ease,opacity 0.35s ease,transform 0.35s ease;
+}
+.svc-card:hover .svc-features{
+  max-height:200px;
+  opacity:1;
+  transform:translateY(0);
+}
+.svc-features li{
+  font-size:0.8rem;font-weight:400;
+  color:rgba(240,248,244,0.55);
+  display:flex;align-items:center;gap:0.5rem;
+}
+.svc-features li::before{
+  content:'▸';color:var(--teal);font-size:0.65rem;flex-shrink:0;
+}
+
+/* CTA link — fades in on hover */
+.svc-cta{
+  display:inline-flex;align-items:center;gap:5px;
+  margin-top:1rem;
+  font-size:0.8rem;font-weight:600;color:var(--teal);
+  opacity:0;transform:translateX(-6px);
+  transition:opacity 0.3s 0.1s,transform 0.3s 0.1s;
+}
+.svc-card:hover .svc-cta{opacity:1;transform:translateX(0);}
+.svc-cta-arrow{transition:transform 0.2s;}
+.svc-card:hover .svc-cta:hover .svc-cta-arrow{transform:translateX(3px);}
+
+.svc-coming{
+  display:inline-block;margin-top:0.8rem;
+  font-size:0.72rem;font-weight:600;
+  color:var(--orange);border:1px solid rgba(255,140,66,0.3);
+  padding:3px 10px;border-radius:4px;
+  background:rgba(255,140,66,0.06);
+}
+
+/* ── HOW IT WORKS ── */
+#how{
+  position:relative;z-index:1;
+  padding:6rem 5%;
+  background:var(--bg);
+}
+.steps-track{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+  position:relative;gap:0;margin-top:1rem;
+}
+.steps-track::before{
+  content:'';position:absolute;top:27px;left:8%;right:8%;height:1px;
+  background:linear-gradient(90deg,transparent,var(--teal-border) 20%,var(--teal-border) 80%,transparent);
+}
+.step{padding:0 1.5rem 1.5rem;text-align:center;position:relative;}
+.step-num{
+  width:54px;height:54px;border-radius:50%;
+  border:1px solid var(--teal);background:var(--bg);
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--sans);font-size:1rem;font-weight:800;color:var(--teal);
+  margin:0 auto 1.2rem;position:relative;z-index:1;
+  transition:background 0.3s,box-shadow 0.3s;
+}
+.step:hover .step-num{background:var(--teal-dim);box-shadow:0 0 20px rgba(78,204,163,0.3);}
+.step h4{font-family:var(--sans);font-size:0.9rem;font-weight:700;margin-bottom:0.4rem;}
+.step p{font-size:0.88rem;color:var(--muted);line-height:1.75;}
+
+/* ── FAQ ── */
+#faq{position:relative;z-index:1;padding:6rem 5%;background:var(--bg2);}
+.faq-list{max-width:780px;margin:0 auto;display:flex;flex-direction:column;gap:0.6rem;}
+.faq-item{
+  background:var(--card);border:1px solid rgba(78,204,163,0.08);
+  border-radius:var(--r);overflow:hidden;transition:border-color 0.2s;
+}
+.faq-item.open{border-color:var(--teal-border);}
+.faq-q{
+  width:100%;background:none;border:none;cursor:pointer;
+  padding:1.1rem 1.4rem;
+  display:flex;justify-content:space-between;align-items:center;
+  font-family:var(--body);font-size:1rem;font-weight:600;
+  color:var(--white);text-align:left;gap:1rem;transition:color 0.2s;
+}
+.faq-q:hover{color:var(--teal);}
+.faq-icon{color:var(--teal);flex-shrink:0;font-size:1.2rem;transition:transform 0.3s;font-family:var(--mono);}
+.faq-item.open .faq-icon{transform:rotate(45deg);}
+.faq-a{
+  max-height:0;overflow:hidden;
+  transition:max-height 0.35s ease;
+  padding:0 1.4rem;
+  font-size:0.95rem;font-weight:400;
+  color:var(--muted);line-height:1.85;
+}
+.faq-item.open .faq-a{max-height:300px;padding-bottom:1.2rem;}
+
+/* ── CONTACT ── */
+#contact{position:relative;z-index:1;padding:6rem 5%;background:var(--bg);}
+.contact-wrap{
+  display:grid;grid-template-columns:1fr 1.4fr;
+  gap:4rem;max-width:1060px;margin:0 auto;
+}
+.contact-info h3{
+  font-family:var(--sans);font-size:1.25rem;font-weight:800;
+  margin-bottom:1.5rem;
+}
+.info-item{display:flex;gap:1rem;margin-bottom:1.4rem;align-items:flex-start;}
+.info-icon{
+  width:38px;height:38px;border-radius:9px;
+  background:var(--teal-dim);border:1px solid var(--teal-border);
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;font-size:1rem;
+}
+.info-item h4{font-size:0.7rem;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:0.8px;margin-bottom:2px;}
+.info-item a,.info-item p{font-size:0.95rem;color:var(--white);text-decoration:none;}
+.info-item a:hover{color:var(--teal);}
+.wa-btn{
+  display:inline-flex;align-items:center;gap:0.7rem;
+  margin-top:1.5rem;background:#25D366;color:#fff;
+  padding:0.8rem 1.8rem;border-radius:50px;
+  font-family:var(--body);font-size:0.88rem;font-weight:700;text-decoration:none;
+  transition:opacity 0.2s,transform 0.15s;
+}
+.wa-btn:hover{opacity:0.88;transform:translateY(-2px);}
+
+/* Form */
+.contact-form{display:flex;flex-direction:column;gap:0.9rem;}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:0.9rem;}
+.form-group{display:flex;flex-direction:column;gap:0.35rem;}
+.form-group label{font-size:0.72rem;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:0.8px;}
+.form-group input,.form-group textarea,.form-group select{
+  background:var(--card);border:1px solid rgba(78,204,163,0.14);
+  border-radius:9px;padding:0.75rem 1rem;
+  font-family:var(--body);font-size:0.95rem;color:var(--white);
+  outline:none;transition:border-color 0.2s;
+}
+.form-group input::placeholder,.form-group textarea::placeholder{color:rgba(240,248,244,0.2);}
+.form-group input:focus,.form-group textarea:focus,.form-group select:focus{border-color:var(--teal);}
+.form-group select option{background:var(--bg3);}
+.form-group textarea{resize:vertical;min-height:110px;}
+.form-error{color:#ff5e5e;font-size:0.72rem;display:none;margin-top:2px;}
+.form-note{font-size:0.72rem;color:var(--muted);}
+.submit-btn{
+  font-family:var(--body);font-size:0.95rem;font-weight:700;
+  background:var(--teal);color:#070d12;
+  border:none;border-radius:50px;padding:0.9rem 2rem;
+  cursor:pointer;width:100%;
+  transition:opacity 0.2s,transform 0.15s;
+}
+.submit-btn:hover{opacity:0.88;transform:translateY(-1px);}
+.submit-btn:disabled{opacity:0.45;cursor:not-allowed;transform:none;}
+.form-success{
+  display:none;text-align:center;padding:2rem;
+  background:var(--teal-dim);border:1px solid var(--teal-border);
+  border-radius:12px;color:var(--teal);
+}
+
+/* ── TERMS ── */
+#terms{position:relative;z-index:1;padding:6rem 5%;background:var(--bg2);}
+.terms-box{
+  max-width:840px;margin:0 auto;
+  background:var(--card);border:1px solid rgba(78,204,163,0.1);
+  border-radius:12px;padding:2rem;
+  max-height:400px;overflow-y:auto;
+}
+.terms-box::-webkit-scrollbar{width:3px;}
+.terms-box::-webkit-scrollbar-thumb{background:var(--teal);border-radius:2px;}
+.terms-box h3{font-family:var(--sans);font-size:0.85rem;font-weight:700;color:var(--teal);margin:1.2rem 0 0.4rem;text-transform:uppercase;letter-spacing:0.5px;}
+.terms-box p,.terms-box li{font-size:0.88rem;color:var(--muted);line-height:1.85;}
+.terms-box ul{padding-left:1.2rem;margin-top:0.3rem;}
+.terms-box a{color:var(--teal);}
+.terms-accept{display:flex;align-items:center;gap:0.8rem;margin-top:1.2rem;max-width:840px;margin-left:auto;margin-right:auto;}
+.terms-accept input{accent-color:var(--teal);width:16px;height:16px;cursor:pointer;}
+.terms-accept label{font-size:0.88rem;color:var(--muted);cursor:pointer;}
+
+/* ── FOOTER ── */
+footer{
+  position:relative;z-index:1;
+  background:rgba(7,13,18,0.98);
+  border-top:1px solid rgba(78,204,163,0.1);
+  padding:2rem 5%;
+  display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;
+}
+.footer-logo{font-family:var(--sans);font-size:1rem;font-weight:800;color:var(--white);}
+.footer-logo span{color:var(--teal);}
+.footer-copy{font-size:0.78rem;color:var(--muted);}
+.footer-links{display:flex;gap:1.5rem;}
+.footer-links a{font-size:0.78rem;color:var(--muted);text-decoration:none;font-weight:500;transition:color 0.2s;}
+.footer-links a:hover{color:var(--teal);}
+
+/* ── ANIMATIONS ── */
+@keyframes fadeUp{from{opacity:0;transform:translateY(22px);}to{opacity:1;transform:translateY(0);}}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity 0.6s ease,transform 0.6s ease;}
+.reveal.visible{opacity:1;transform:none;}
+
+/* ── RESPONSIVE ── */
+@media(max-width:960px){
+  #hero{grid-template-columns:1fr;text-align:center;padding-top:7rem;}
+  .hero-sub{max-width:100%;}
+  .hero-btns{justify-content:center;}
+  .hero-stats{margin:0 auto;}
+  .hero-right{display:none;}
+}
+@media(max-width:768px){
+  .nav-links{
+    display:none;flex-direction:column;
+    position:absolute;top:100%;left:0;right:0;
+    background:rgba(7,13,18,0.97);
+    padding:1.5rem 5%;gap:1.2rem;
+    border-bottom:1px solid rgba(78,204,163,0.1);
+  }
+  .nav-links.open{display:flex;}
+  .hamburger{display:flex;}
+  .contact-wrap{grid-template-columns:1fr;gap:2.5rem;}
+  .form-row{grid-template-columns:1fr;}
+  footer{flex-direction:column;text-align:center;}
+  .footer-links{justify-content:center;}
+  .steps-track::before{display:none;}
+  .hero-h1{letter-spacing:-1px;}
+}
+</style>
+</head>
+<body>
+
+<div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+
+<!-- ── NAV ── -->
+<nav role="navigation" aria-label="Main navigation">
+  <a href="#hero" class="logo">OTF<span>.solutions</span></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#how">Process</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#contact" class="nav-cta">Get a Quote</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ── HERO ── -->
+<section id="hero" aria-label="Hero">
+  <div class="hero-left">
+    <div class="hero-chip">
+      <div class="chip-dot"></div>
+      <span class="chip-txt">Kenya's Smart Business Tech Partner</span>
+    </div>
+    <h1 class="hero-h1">
+      Your Business,<br/>
+      <em>Automated.</em><br/>
+      Amplified.
+    </h1>
+    <p class="hero-sub">OTF Solutions Ltd builds intelligent workflow systems, modern websites, AI-powered tools, KRA tax filing, and bulk SMS — everything your business needs to run smarter, faster, and 24/7.</p>
+    <div class="hero-btns">
+      <a href="#services" class="btn-primary">Explore Services</a>
+      <a href="#contact" class="btn-ghost">Request a Quote →</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-box">
+        <div class="stat-val">24/7</div>
+        <div class="stat-lbl">Automation uptime</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-val">5+</div>
+        <div class="stat-lbl">Core services</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-val">Fast</div>
+        <div class="stat-lbl">Delivery</div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-right" aria-hidden="true">
+    <canvas id="nodeCanvas"></canvas>
+  </div>
+</section>
+
+<!-- ── SERVICES ── -->
+<section id="services" aria-labelledby="svc-title">
+  <div class="centered reveal">
+    <p class="sec-eyebrow">What we build</p>
+    <h2 class="sec-title" id="svc-title">Our <span>Services</span></h2>
+    <p class="sec-sub">Precision-engineered digital solutions that automate, accelerate, and elevate your business. Hover a card to explore.</p>
+  </div>
+
+  <div class="svc-grid reveal">
+
+    <!-- 1 Workflow Automation -->
+    <article class="svc-card" tabindex="0" role="article" aria-label="Workflow Automation service">
+      <div class="svc-img-wrap">
+        <img class="svc-img"
+          src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=700&q=80"
+          alt="Circuit board representing workflow automation"
+          loading="lazy"/>
+        <div class="svc-img-fade"></div>
+        <span class="svc-badge badge-live">● Live</span>
+      </div>
+      <div class="svc-body">
+        <div class="svc-icon-row">
+          <div class="svc-icon">⚙️</div>
+          <div class="svc-name">Workflow Automation</div>
+        </div>
+        <p class="svc-desc">We turn your manual, repetitive processes into intelligent automated pipelines — from WhatsApp agents to full multi-system integrations — running 24/7 without you lifting a finger.</p>
+        <ul class="svc-features">
+          <li>WhatsApp business agent bots</li>
+          <li>CRM, email & payments integration</li>
+          <li>Lead capture & follow-up automation</li>
+          <li>Automated reports & notifications</li>
+          <li>Custom trigger-action workflows</li>
+        </ul>
+        <span class="svc-cta">Learn more <span class="svc-cta-arrow">→</span></span>
+      </div>
+    </article>
+
+    <!-- 2 Web Design -->
+    <article class="svc-card" tabindex="0" role="article" aria-label="Web Design service">
+      <div class="svc-img-wrap">
+        <img class="svc-img"
+          src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=700&q=80"
+          alt="Modern web design on laptop screen"
+          loading="lazy"/>
+        <div class="svc-img-fade"></div>
+        <span class="svc-badge badge-live">● Live</span>
+      </div>
+      <div class="svc-body">
+        <div class="svc-icon-row">
+          <div class="svc-icon">🌐</div>
+          <div class="svc-name">Web Design & Development</div>
+        </div>
+        <p class="svc-desc">Fast, SEO-optimised websites that are mobile-first and built to convert — from professional landing pages to full e-commerce stores your clients can trust.</p>
+        <ul class="svc-features">
+          <li>Responsive, mobile-first layouts</li>
+          <li>SEO & structured data built-in</li>
+          <li>E-commerce & payment integration</li>
+          <li>CMS for easy self-management</li>
+          <li>Core Web Vitals performance tuning</li>
+        </ul>
+        <span class="svc-cta">Learn more <span class="svc-cta-arrow">→</span></span>
+      </div>
+    </article>
+
+    <!-- 3 AI Detection -->
+    <article class="svc-card" tabindex="0" role="article" aria-label="AI Detection and Plagiarism Removal service">
+      <div class="svc-img-wrap">
+        <img class="svc-img"
+          src="https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=700&q=80"
+          alt="Neural network representing AI detection technology"
+          loading="lazy"/>
+        <div class="svc-img-fade"></div>
+        <span class="svc-badge badge-live">● Live</span>
+      </div>
+      <div class="svc-body">
+        <div class="svc-icon-row">
+          <div class="svc-icon">🧠</div>
+          <div class="svc-name">AI Detection & Plagiarism Removal</div>
+        </div>
+        <p class="svc-desc">We humanize AI-written content and remove plagiarism so your work passes Turnitin, GPTZero, and Originality.AI — without losing quality, accuracy, or your voice.</p>
+        <ul class="svc-features">
+          <li>AI content humanization & rewriting</li>
+          <li>Plagiarism detection & originality rewrite</li>
+          <li>Passes Turnitin, GPTZero, Originality.AI</li>
+          <li>Academic, business & marketing content</li>
+          <li>Fast 24–48 hr turnaround</li>
+        </ul>
+        <span class="svc-cta">Learn more <span class="svc-cta-arrow">→</span></span>
+      </div>
+    </article>
+
+    <!-- 4 KRA Filing -->
+    <article class="svc-card" tabindex="0" role="article" aria-label="KRA Tax Filing service">
+      <div class="svc-img-wrap">
+        <img class="svc-img"
+          src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=700&q=80"
+          alt="Tax documents and calculator for KRA filing"
+          loading="lazy"/>
+        <div class="svc-img-fade"></div>
+        <span class="svc-badge badge-live">● Live</span>
+      </div>
+      <div class="svc-body">
+        <div class="svc-icon-row">
+          <div class="svc-icon">📋</div>
+          <div class="svc-name">KRA Tax Filing</div>
+        </div>
+        <p class="svc-desc">Accurate, on-time KRA iTax filing for individuals and businesses — from VAT and PAYE to income tax returns — so you stay fully compliant and penalty-free.</p>
+        <ul class="svc-features">
+          <li>Individual & corporate iTax filing</li>
+          <li>VAT, PAYE & income tax returns</li>
+          <li>KRA PIN registration & compliance</li>
+          <li>Tax obligation management</li>
+          <li>Penalty & interest advisory</li>
+        </ul>
+        <span class="svc-cta">Learn more <span class="svc-cta-arrow">→</span></span>
+      </div>
+    </article>
+
+    <!-- 5 Bulk SMS -->
+    <article class="svc-card" tabindex="0" role="article" aria-label="Bulk SMS service - coming soon" style="opacity:0.85;">
+      <div class="svc-img-wrap">
+        <img class="svc-img"
+          src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=700&q=80"
+          alt="Mobile phone showing SMS messaging"
+          loading="lazy"/>
+        <div class="svc-img-fade"></div>
+        <span class="svc-badge badge-soon">◎ Coming Soon</span>
+      </div>
+      <div class="svc-body">
+        <div class="svc-icon-row">
+          <div class="svc-icon" style="background:rgba(255,140,66,0.08);border-color:rgba(255,140,66,0.25);">📱</div>
+          <div class="svc-name" style="color:rgba(240,248,244,0.65);">Bulk SMS Campaigns</div>
+        </div>
+        <p class="svc-desc">Reach thousands of customers instantly with targeted, personalised SMS campaigns integrated directly with your CRM and automation workflows.</p>
+        <ul class="svc-features">
+          <li>Mass SMS to segmented contact lists</li>
+          <li>Scheduled & triggered campaigns</li>
+          <li>Delivery reports & analytics</li>
+          <li>CRM & workflow integration</li>
+          <li>Competitive per-SMS pricing</li>
+        </ul>
+        <span class="svc-coming">Join the waitlist →</span>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ── HOW IT WORKS ── -->
+<section id="how" aria-labelledby="how-title">
+  <div class="centered reveal">
+    <p class="sec-eyebrow">Our process</p>
+    <h2 class="sec-title" id="how-title">From Brief to <span>Live System</span></h2>
+    <p class="sec-sub">A battle-tested 4-phase process — transparent, fast, and built around your goals.</p>
+  </div>
+  <div class="steps-track reveal">
+    <div class="step">
+      <div class="step-num">01</div>
+      <h4>Discovery</h4>
+      <p>We understand your business goals, pain points, and technical environment in a focused consultation.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">02</div>
+      <h4>Architect</h4>
+      <p>We design a tailored solution blueprint with clear deliverables, timeline, and transparent pricing.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">03</div>
+      <h4>Build</h4>
+      <p>Rapid development with regular progress updates. You see results before anything goes live.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">04</div>
+      <h4>Deploy</h4>
+      <p>Launch, handover, and ongoing monitoring — we stay available to optimise and support your system.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── FAQ ── -->
+<section id="faq" aria-labelledby="faq-title">
+  <div class="centered reveal">
+    <p class="sec-eyebrow">FAQ</p>
+    <h2 class="sec-title" id="faq-title">Common <span>Questions</span></h2>
+    <p class="sec-sub">Everything you need to know about working with OTF Solutions Ltd.</p>
+  </div>
+  <div class="faq-list reveal">
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false">What does workflow automation actually involve?<span class="faq-icon">+</span></button>
+      <div class="faq-a">Workflow automation replaces manual, repetitive tasks with intelligent software sequences. We connect your business tools — WhatsApp, email, spreadsheets, payment apps — so they talk to each other automatically, sending messages, updating records, generating reports, and following up on leads without you lifting a finger.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false">What does your AI detection & plagiarism removal cover?<span class="faq-icon">+</span></button>
+      <div class="faq-a">We work with essays, articles, reports, marketing copy, and academic content. Our process rewrites AI-generated or flagged content so it reads naturally and passes GPTZero, Turnitin, and Originality.AI. We preserve your original meaning while making content undetectable. Turnaround is typically 24–48 hours.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false">Who can use your KRA filing service?<span class="faq-icon">+</span></button>
+      <div class="faq-a">Anyone who needs to file with Kenya Revenue Authority — individuals, sole traders, SMEs, and companies. We handle income tax returns, VAT, PAYE, and more. We also assist with KRA PIN registration and resolving compliance issues.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false">How long does a website take to build?<span class="faq-icon">+</span></button>
+      <div class="faq-a">A professional landing page or business website typically takes 5–10 business days. More complex sites with e-commerce or custom functionality take 3–6 weeks. We'll confirm your timeline after the discovery call.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false">When will Bulk SMS be available?<span class="faq-icon">+</span></button>
+      <div class="faq-a">Bulk SMS is in active development and launching soon. Fill in the contact form and select "Bulk SMS Waitlist" — we'll notify you the moment it goes live with early-access pricing.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false">Is my business data kept confidential?<span class="faq-icon">+</span></button>
+      <div class="faq-a">Absolutely. All client information, business data, and project details are treated with strict confidentiality. We use encrypted connections, secure storage, and never share your data with third parties. Full details are in our Terms & Conditions below.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false">How do I get a quote?<span class="faq-icon">+</span></button>
+      <div class="faq-a">Fill in the inquiry form below or send us a WhatsApp message directly. Describe which service you need and your requirements, and we'll come back to you within one business day with a tailored quote — no obligation.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CONTACT ── -->
+<section id="contact" aria-labelledby="contact-title">
+  <div class="centered reveal">
+    <p class="sec-eyebrow">Get started</p>
+    <h2 class="sec-title" id="contact-title">Send an <span>Inquiry</span></h2>
+    <p class="sec-sub">Tell us what you need. We'll respond within one business day.</p>
+  </div>
+  <div class="contact-wrap reveal">
+    <div class="contact-info">
+      <h3>Reach Us</h3>
+      <div class="info-item">
+        <div class="info-icon">📧</div>
+        <div><h4>Email</h4><a href="mailto:otfsolutionsltd@gmail.com">otfsolutionsltd@gmail.com</a></div>
+      </div>
+      <div class="info-item">
+        <div class="info-icon">📞</div>
+        <div><h4>Phone / WhatsApp</h4><a href="tel:+254106351077">0106351077</a></div>
+      </div>
+      <div class="info-item">
+        <div class="info-icon">⏱</div>
+        <div><h4>Response time</h4><p>Within 1 business day</p></div>
+      </div>
+      <a href="https://wa.me/254106351077?text=Hello%20OTF%20Solutions%2C%20I%27d%20like%20to%20inquire%20about%20your%20services." class="wa-btn" target="_blank" rel="noopener noreferrer" aria-label="Chat with OTF Solutions on WhatsApp">
+        💬 Chat on WhatsApp
+      </a>
+    </div>
+
+    <div>
+      <form class="contact-form" id="inquiryForm" novalidate aria-label="Inquiry form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fname">First name *</label>
+            <input type="text" id="fname" placeholder="Jane" required autocomplete="given-name" maxlength="60"/>
+            <span class="form-error" id="fnameErr">Please enter your first name.</span>
+          </div>
+          <div class="form-group">
+            <label for="lname">Last name *</label>
+            <input type="text" id="lname" placeholder="Doe" required autocomplete="family-name" maxlength="60"/>
+            <span class="form-error" id="lnameErr">Please enter your last name.</span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email address *</label>
+          <input type="email" id="email" placeholder="jane@company.com" required autocomplete="email" maxlength="120"/>
+          <span class="form-error" id="emailErr">Please enter a valid email address.</span>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone / WhatsApp</label>
+          <input type="tel" id="phone" placeholder="07XX XXX XXX" autocomplete="tel" maxlength="20"/>
+          <span class="form-error" id="phoneErr">Please enter a valid phone number.</span>
+        </div>
+        <div class="form-group">
+          <label for="service">Service required *</label>
+          <select id="service" required>
+            <option value="" disabled selected>Select a service…</option>
+            <option value="Workflow Automation">Workflow Automation</option>
+            <option value="Web Design & Development">Web Design & Development</option>
+            <option value="AI Detection & Plagiarism Removal">AI Detection & Plagiarism Removal</option>
+            <option value="KRA Tax Filing">KRA Tax Filing</option>
+            <option value="Bulk SMS Waitlist">Bulk SMS — Join Waitlist</option>
+            <option value="Multiple / Not Sure">Multiple Services / Not Sure Yet</option>
+          </select>
+          <span class="form-error" id="serviceErr">Please select a service.</span>
+        </div>
+        <div class="form-group">
+          <label for="message">Project brief *</label>
+          <textarea id="message" placeholder="Describe your requirements, current challenges, or goals…" required maxlength="2000"></textarea>
+          <span class="form-error" id="messageErr">Please describe your project (min 20 characters).</span>
+        </div>
+        <p class="form-note">* Required fields. Your data is handled securely and never shared.</p>
+        <button type="submit" class="submit-btn" id="submitBtn">Send Inquiry</button>
+      </form>
+      <div class="form-success" id="formSuccess" role="alert" aria-live="polite">
+        <p style="font-size:2rem;margin-bottom:0.5rem;">✅</p>
+        <p><strong>Inquiry received.</strong> We'll be in touch within one business day.<br/>You can also WhatsApp us directly at 0106351077.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── TERMS ── -->
+<section id="terms" aria-labelledby="terms-title">
+  <div class="centered reveal">
+    <p class="sec-eyebrow">Legal</p>
+    <h2 class="sec-title" id="terms-title">Terms & <span>Conditions</span></h2>
+    <p class="sec-sub">By using our services you agree to the following terms. Please read carefully.</p>
+  </div>
+  <div class="terms-box reveal" tabindex="0" role="region" aria-label="Terms and Conditions">
+    <p><strong>Last updated: 2025.</strong> These Terms and Conditions govern your engagement with OTF Solutions Ltd ("Company", "we", "us"). By submitting an inquiry or using any of our services, you agree to be bound by these Terms.</p>
+    <h3>1. Services</h3>
+    <p>OTF Solutions Ltd provides workflow automation, web design and development, AI content detection and plagiarism removal, KRA tax filing assistance, and bulk SMS services. Scope per engagement is defined in a written Proposal or Service Agreement.</p>
+    <h3>2. Client Responsibilities</h3>
+    <ul><li>Provide accurate and timely information required for service delivery.</li><li>Ensure you hold legal rights to all materials and content you provide us.</li><li>For KRA services: you remain responsible for the accuracy of financial data submitted.</li><li>For AI/plagiarism services: content submitted must not violate third-party intellectual property rights.</li></ul>
+    <h3>3. Payment Terms</h3>
+    <p>A deposit is required before work commences unless otherwise agreed in writing. Balances are due upon delivery or as stipulated in your Service Agreement. Late payments may result in work suspension. All amounts are exclusive of applicable taxes.</p>
+    <h3>4. Intellectual Property</h3>
+    <p>Upon full payment, clients receive ownership of custom deliverables created exclusively for them. OTF Solutions Ltd retains all rights to underlying frameworks, methodologies, tools, and code libraries.</p>
+    <h3>5. AI Detection & Plagiarism Services</h3>
+    <p>OTF Solutions Ltd provides content rewriting and humanization services for legitimate purposes. Clients confirm that submitted content will not be used for academic fraud or any purpose that violates institutional policies.</p>
+    <h3>6. KRA Filing Disclaimer</h3>
+    <p>OTF Solutions Ltd facilitates KRA iTax filing based on information provided by the client. The accuracy of tax returns depends on the accuracy of client-supplied financial data. We are not liable for penalties arising from incorrect data provided by clients.</p>
+    <h3>7. Data Privacy & Security</h3>
+    <p>We collect only data necessary to deliver services. Inquiry form data is used solely to respond to you and is stored securely. We do not sell, rent, or share personal data with third parties.</p>
+    <h3>8. Confidentiality</h3>
+    <p>Both parties agree to keep confidential any proprietary or sensitive information shared during the engagement. This obligation survives termination of the service relationship.</p>
+    <h3>9. Limitation of Liability</h3>
+    <p>OTF Solutions Ltd's total liability is limited to the fees paid for the specific service giving rise to the claim. We are not liable for indirect, consequential, or incidental damages including loss of revenue or data.</p>
+    <h3>10. Termination</h3>
+    <p>Either party may terminate with 14 days written notice. Work completed to the termination date will be invoiced and is payable. Deposits are non-refundable once work has commenced.</p>
+    <h3>11. Governing Law</h3>
+    <p>These Terms are governed by the laws of the Republic of Kenya. Disputes shall first be resolved through good-faith negotiation, failing which through the courts of Kenya.</p>
+    <h3>12. Contact</h3>
+    <p>For questions: <a href="mailto:otfsolutionsltd@gmail.com">otfsolutionsltd@gmail.com</a> | 0106351077</p>
+  </div>
+  <div class="terms-accept reveal">
+    <input type="checkbox" id="termsCheck"/>
+    <label for="termsCheck">I have read and agree to the OTF Solutions Ltd Terms &amp; Conditions.</label>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer role="contentinfo">
+  <div class="footer-logo">OTF<span>.solutions</span> Ltd</div>
+  <p class="footer-copy">© 2025 OTF Solutions Ltd — All rights reserved</p>
+  <nav class="footer-links" aria-label="Footer links">
+    <a href="#services">Services</a>
+    <a href="#faq">FAQ</a>
+    <a href="#terms">Terms</a>
+    <a href="mailto:otfsolutionsltd@gmail.com">Email us</a>
+  </nav>
+</footer>
+
+<script>
+/* ── CURSOR ── */
+const dot = document.getElementById('cursorDot');
+document.addEventListener('mousemove', e => {
+  dot.style.left = e.clientX + 'px';
+  dot.style.top = e.clientY + 'px';
+});
+
+/* ── HAMBURGER ── */
+const hamburger = document.getElementById('hamburger');
+const navLinks  = document.getElementById('navLinks');
+hamburger.addEventListener('click', () => {
+  const open = navLinks.classList.toggle('open');
+  hamburger.setAttribute('aria-expanded', String(open));
+});
+navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+  navLinks.classList.remove('open');
+  hamburger.setAttribute('aria-expanded', 'false');
+}));
+
+/* ── NODE GRAPH HERO ── */
+(function(){
+  const canvas = document.getElementById('nodeCanvas');
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+  function resize(){
+    canvas.width  = canvas.offsetWidth;
+    canvas.height = canvas.offsetHeight;
+  }
+  resize();
+  window.addEventListener('resize', resize);
+
+  const SERVICES = ['Workflow\nAutomation','Web\nDesign','AI\nDetection','KRA\nFiling','Bulk\nSMS'];
+  const COLORS   = ['#4ecca3','#4ecca3','#4ecca3','#4ecca3','#ff8c42'];
+  let t = 0;
+
+  function draw(){
+    const W = canvas.width, H = canvas.height;
+    ctx.clearRect(0, 0, W, H);
+    const cx = W * 0.42, cy = H * 0.5;
+    const r  = Math.min(W, H) * 0.33;
+
+    const pts = SERVICES.map((s, i) => {
+      const a = (i / SERVICES.length) * Math.PI * 2 - Math.PI / 2 + t * 0.004;
+      return {
+        x: cx + Math.cos(a) * r * (0.92 + 0.08 * Math.sin(t * 0.018 + i)),
+        y: cy + Math.sin(a) * r * (0.92 + 0.08 * Math.cos(t * 0.022 + i)),
+        label: s, color: COLORS[i]
+      };
+    });
+
+    /* connection lines */
+    pts.forEach(p => {
+      const g = ctx.createLinearGradient(cx, cy, p.x, p.y);
+      g.addColorStop(0, 'rgba(78,204,163,0.6)');
+      g.addColorStop(1, 'rgba(78,204,163,0.03)');
+      ctx.beginPath(); ctx.moveTo(cx, cy); ctx.lineTo(p.x, p.y);
+      ctx.strokeStyle = g; ctx.lineWidth = 1; ctx.stroke();
+    });
+    pts.forEach((p, i) => {
+      const n = pts[(i+1) % pts.length];
+      ctx.beginPath(); ctx.moveTo(p.x, p.y); ctx.lineTo(n.x, n.y);
+      ctx.strokeStyle = 'rgba(255,255,255,0.04)'; ctx.lineWidth = 0.5; ctx.stroke();
+    });
+
+    /* travelling dots */
+    pts.forEach((p, i) => {
+      const prog = ((t * 0.012 + i * 0.2) % 1);
+      const tx = cx + (p.x - cx) * prog;
+      const ty = cy + (p.y - cy) * prog;
+      ctx.beginPath(); ctx.arc(tx, ty, 2.2, 0, Math.PI*2);
+      ctx.fillStyle = 'rgba(255,255,255,0.75)'; ctx.fill();
+    });
+
+    /* central hub */
+    const pulse = 1 + 0.05 * Math.sin(t * 0.04);
+    ctx.beginPath(); ctx.arc(cx, cy, 26 * pulse, 0, Math.PI*2);
+    ctx.fillStyle = 'rgba(78,204,163,0.1)'; ctx.fill();
+    ctx.beginPath(); ctx.arc(cx, cy, 17, 0, Math.PI*2);
+    ctx.fillStyle = 'rgba(78,204,163,0.22)'; ctx.fill();
+    ctx.beginPath(); ctx.arc(cx, cy, 10, 0, Math.PI*2);
+    ctx.fillStyle = '#4ecca3'; ctx.fill();
+    ctx.font = 'bold 8px Inter,sans-serif';
+    ctx.fillStyle = '#070d12';
+    ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+    ctx.fillText('OTF', cx, cy);
+
+    /* outer nodes */
+    pts.forEach(p => {
+      ctx.beginPath(); ctx.arc(p.x, p.y, 10, 0, Math.PI*2);
+      ctx.fillStyle = p.color === '#ff8c42' ? 'rgba(255,140,66,0.1)' : 'rgba(78,204,163,0.1)';
+      ctx.fill();
+      ctx.beginPath(); ctx.arc(p.x, p.y, 6, 0, Math.PI*2);
+      ctx.fillStyle = p.color; ctx.fill();
+
+      const lines = p.label.split('\n');
+      ctx.font = '500 10.5px Inter,sans-serif';
+      ctx.fillStyle = 'rgba(240,248,244,0.82)';
+      ctx.textAlign = 'left'; ctx.textBaseline = 'middle';
+      const lx = p.x + 14;
+      const ly = p.y - (lines.length - 1) * 7;
+      lines.forEach((line, li) => ctx.fillText(line, lx, ly + li * 14));
+    });
+
+    t++;
+    requestAnimationFrame(draw);
+  }
+  draw();
+})();
+
+/* ── SCROLL REVEAL ── */
+const ro = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting){ e.target.classList.add('visible'); ro.unobserve(e.target); }});
+}, { threshold: 0.08 });
+document.querySelectorAll('.reveal').forEach(el => ro.observe(el));
+
+/* ── FAQ ACCORDION ── */
+document.querySelectorAll('.faq-q').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const item = btn.closest('.faq-item');
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(i => {
+      i.classList.remove('open');
+      i.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+    });
+    if (!isOpen){ item.classList.add('open'); btn.setAttribute('aria-expanded', 'true'); }
+  });
+});
+
+/* ── INPUT SANITIZER ── */
+function sanitize(s){
+  return s.trim()
+    .replace(/</g,'&lt;').replace(/>/g,'&gt;')
+    .replace(/"/g,'&quot;').replace(/'/g,'&#x27;')
+    .replace(/\//g,'&#x2F;')
+    .replace(/[^\w\s@.\-+(),&]/g,'');
+}
+function validEmail(e){ return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e); }
+function validPhone(p){ return !p || /^[\d\s\+\-\(\)]{7,20}$/.test(p); }
+function showErr(id, show){ document.getElementById(id).style.display = show ? 'block' : 'none'; }
+
+/* ── FORM SUBMIT ── */
+document.getElementById('inquiryForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  const fname   = sanitize(document.getElementById('fname').value);
+  const lname   = sanitize(document.getElementById('lname').value);
+  const email   = sanitize(document.getElementById('email').value);
+  const phone   = sanitize(document.getElementById('phone').value);
+  const service = document.getElementById('service').value;
+  const message = sanitize(document.getElementById('message').value);
+
+  let ok = true;
+  if (fname.length < 2)    { showErr('fnameErr',   true); ok=false; } else showErr('fnameErr',   false);
+  if (lname.length < 2)    { showErr('lnameErr',   true); ok=false; } else showErr('lnameErr',   false);
+  if (!validEmail(email))  { showErr('emailErr',   true); ok=false; } else showErr('emailErr',   false);
+  if (!validPhone(phone))  { showErr('phoneErr',   true); ok=false; } else showErr('phoneErr',   false);
+  if (!service)            { showErr('serviceErr', true); ok=false; } else showErr('serviceErr', false);
+  if (message.length < 20) { showErr('messageErr', true); ok=false; } else showErr('messageErr', false);
+  if (!ok) return;
+
+  const btn = document.getElementById('submitBtn');
+  btn.disabled = true; btn.textContent = 'Sending…';
+
+  const waMsg = encodeURIComponent(
+    `New Inquiry — OTF Solutions\n` +
+    `Name: ${fname} ${lname}\n` +
+    `Email: ${email}\n` +
+    `Phone: ${phone || 'N/A'}\n` +
+    `Service: ${service}\n` +
+    `Brief: ${message}`
+  );
+
+  setTimeout(() => {
+    document.getElementById('inquiryForm').style.display = 'none';
+    document.getElementById('formSuccess').style.display = 'block';
+    window.open(`https://wa.me/254106351077?text=${waMsg}`, '_blank', 'noopener,noreferrer');
+  }, 700);
+});
+</script>
+</body>
+</html>
